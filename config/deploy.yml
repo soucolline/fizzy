@@ -8,12 +8,13 @@ image: fizzy
 # Where to deploy fizzy
 servers:
   web:
-    - 51.255.195.110  # Set your server name here
+    - vps-98efa65e  # Set your server name here
 
 # How you connect to your server
 ssh:
   user: soucolline  # If you use a different username to SSH to your server, specify it here
-  proxy: soucolline@vps-98efa65e
+  keys: [~/.ssh/id_ed25519]
+  keys_only: true
 
 # Automatic SSL
 proxy:
